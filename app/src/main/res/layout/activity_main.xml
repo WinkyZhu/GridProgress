@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.winkyzhu.progressview.MainActivity">
+
+    <com.zhuxiangqing.progress.ProgressView
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        app:maxValue="18"
+        app:currentValue="5"
+        app:emptyColor="#3519b3"
+        app:fullColor="#2e6b4a"
+        />
+
+    <com.zhuxiangqing.progress.ProgressView
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        app:currentValue="1"/>
+</LinearLayout>
