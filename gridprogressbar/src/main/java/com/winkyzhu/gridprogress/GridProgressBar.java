@@ -147,9 +147,9 @@ public class GridProgressBar extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        float maxValueNum = (float) (maxValue - 1) / 4 + maxValue;
+        float maxValueNum =  (maxValue - 1)*2 + maxValue;
         final float paintWidth = (getMeasuredHeight() - bottomPadding - topPadding) / maxValueNum;
-        final float distance = paintWidth / 4;
+        final float distance = paintWidth *2;
         setPaintWidth(paintWidth, mEmptyPaint, mProgressPaint);
         for (int i = 0; i < maxValue; i++) {
             fillPathByIndex(paths[i], i, paintWidth, distance);
