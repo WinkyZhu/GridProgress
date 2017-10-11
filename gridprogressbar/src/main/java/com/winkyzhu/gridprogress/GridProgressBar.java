@@ -1,4 +1,4 @@
-package com.zhuxiangqing.progress;
+package com.winkyzhu.gridprogress;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,7 +15,7 @@ import android.view.View;
  *
  */
 
-public class ProgressView extends View {
+public class GridProgressBar extends View {
     private Paint mEmptyPaint;
     private Paint mFullPaint;
     private static int EMPTY_COLOR_DEFAULT = Color.parseColor("#C5BAB9");
@@ -29,17 +29,17 @@ public class ProgressView extends View {
     private float mTBPadding = 20;
 
 
-    public ProgressView(Context context) {
+    public GridProgressBar(Context context) {
         this(context, null);
     }
 
-    public ProgressView(Context context, @Nullable AttributeSet attrs) {
+    public GridProgressBar(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attrs, R.styleable.ProgressView);
-        maxValue = obtainStyledAttributes.getInt(R.styleable.ProgressView_maxValue, 20);
-        currentValue = obtainStyledAttributes.getInt(R.styleable.ProgressView_currentValue,0);
-        mFullColor = obtainStyledAttributes.getColor(R.styleable.ProgressView_fullColor,FULL_COLOR_DEFAULT);
-        mEmptyColor = obtainStyledAttributes.getColor(R.styleable.ProgressView_emptyColor,EMPTY_COLOR_DEFAULT);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attrs, R.styleable.GridProgressBar);
+        maxValue = obtainStyledAttributes.getInt(R.styleable.GridProgressBar_max, 20);
+        currentValue = obtainStyledAttributes.getInt(R.styleable.GridProgressBar_progress,0);
+        mFullColor = obtainStyledAttributes.getColor(R.styleable.GridProgressBar_progressColor,FULL_COLOR_DEFAULT);
+        mEmptyColor = obtainStyledAttributes.getColor(R.styleable.GridProgressBar_emptyColor,EMPTY_COLOR_DEFAULT);
         mEmptyPaint = makePaint(mEmptyColor);
         mFullPaint = makePaint(mFullColor);
         paths = new Path[maxValue];

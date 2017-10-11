@@ -7,18 +7,18 @@
     android:orientation="horizontal"
     tools:context="com.winkyzhu.progressview.MainActivity">
 
-    <com.zhuxiangqing.progress.ProgressView
+    <com.winkyzhu.gridprogress.GridProgressBar
         android:layout_width="100dp"
         android:layout_height="300dp"
-        app:maxValue="18"
-        app:currentValue="5"
+        app:max="18"
+        app:progress="5"
         app:emptyColor="#3519b3"
-        app:fullColor="#2e6b4a"
+        app:progressColor="#2e6b4a"
         />
 
-    <com.zhuxiangqing.progress.ProgressView
+    <com.winkyzhu.gridprogress.GridProgressBar
         android:layout_marginLeft="20dp"
         android:layout_width="100dp"
         android:layout_height="200dp"
-        app:currentValue="1"/>
+        app:progress="1"/>
 </LinearLayout>
