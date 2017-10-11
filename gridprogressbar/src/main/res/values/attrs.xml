@@ -5,5 +5,9 @@
         <attr name="progress" format="integer" />
         <attr name="emptyColor" format="color" />
         <attr name="progressColor" format="color" />
+        <attr name="gridStyle" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="square" value="1"/>
+        </attr>
     </declare-styleable>
 </resources>

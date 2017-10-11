@@ -4,21 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="com.winkyzhu.progressview.MainActivity">
 
-    <com.winkyzhu.gridprogress.GridProgressBar
-        android:layout_width="100dp"
-        android:layout_height="300dp"
-        app:max="18"
-        app:progress="5"
-        app:emptyColor="#3519b3"
-        app:progressColor="#2e6b4a"
-        />
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:max="20" />
 
-    <com.winkyzhu.gridprogress.GridProgressBar
-        android:layout_marginLeft="20dp"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        app:progress="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.winkyzhu.gridprogress.GridProgressBar
+            android:id="@+id/progress1"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            app:gridStyle="square"
+            app:max="20" />
+
+        <com.winkyzhu.gridprogress.GridProgressBar
+            android:id="@+id/progress2"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            app:gridStyle="round"
+            app:max="20" />
+
+        <com.winkyzhu.gridprogress.GridProgressBar
+            android:id="@+id/progress3"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+             />
+    </LinearLayout>
+
+
 </LinearLayout>
