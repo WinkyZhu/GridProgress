@@ -1,4 +1,4 @@
-package com.zhuxiangqing.progress;
+package com.winkyzhu.gridprogress;
 
 import org.junit.Test;
 

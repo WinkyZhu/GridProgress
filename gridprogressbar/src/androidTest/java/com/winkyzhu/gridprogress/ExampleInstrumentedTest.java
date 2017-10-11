@@ -1,4 +1,4 @@
-package com.zhuxiangqing.progress;
+package com.winkyzhu.gridprogress;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.zhuxiangqing.progress.test", appContext.getPackageName());
+        assertEquals("com.winkyzhu.gridprogressbar.test", appContext.getPackageName());
     }
 }
