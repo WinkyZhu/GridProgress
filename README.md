@@ -1,7 +1,7 @@
 # GridProgress
-GridProgress项目需求 
->Gradle:
->Add it in your root build.gradle at the end of repositories:
+GridProgress项目需求
+## Usage
+Add it in your root build.gradle at the end of repositories:
 ```groovy
 allprojects {
 	repositories {
